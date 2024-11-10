@@ -1,0 +1,46 @@
+/* h1{
+    background-color: rgb(0, 0, 0);
+    color: rgb(242, 242, 242);
+    text-align: center;
+} */
+
+ .main:hover{
+    background-color: rgb(225, 236, 9);
+    cursor: pointer;
+ }
+ .main:active{
+    background: red;
+    border: 2px solid greenyellow;
+}
+ .main{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+ }
+.head1{
+    background-color: aqua;
+    text-align:center;
+    color: brown;
+    
+}
+.head2{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: rgb(247, 217, 23);
+}
+.head3{
+    background-color: aqua;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.head4{
+    background-color: rgb(21, 255, 91);
+    text-align: center;
+    color: rgb(22, 150, 254);
+}
+.head5{
+    background-color: rgb(24, 28, 245);
+    text-align: center;
+    color: rgb(237, 24, 163);
+}

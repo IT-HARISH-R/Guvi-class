@@ -1,0 +1,77 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+.box{
+    width: 70vw;
+    height: 70vh;
+    background-color: black;
+    margin: auto;
+}
+
+
+
+
+
+/* .main-box{
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+}
+.box{
+    background: aqua;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.box2{
+    background: aqua;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.box3{
+    background: aqua;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.box4{
+    background: aqua;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+} */
+
+
+
+/* .outer{
+    margin: 10px;
+    border-top: 5px solid black;
+    border-bottom: 2px dotted rgb(227, 104, 104);
+    border-right: 2px double rgb(7, 187, 46);
+    border-left: 2px groove rgb(29, 144, 222);
+    padding: 20px;
+}
+.instde-div1{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border: solid red;
+    display: inline-block;
+}
+.instde-div2{
+        margin: 10px;
+    width: 200px;
+    height: 200px;
+    border: groove rgb(118, 1, 252);
+    display: inline-block;
+}
+.instde-div3{
+        margin: 10px;
+    width: 200px;
+    height: 200px;
+    border: double rgb(235, 7, 185);
+    display: inline-block;
+} */
