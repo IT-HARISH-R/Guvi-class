@@ -18,11 +18,12 @@ a {
 header {
   background: linear-gradient(to right, var(--primart), var(--secondary));
   font-size: large;
-  padding: .5rem;
+  padding: 1rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 11111111;
 }
 
 nav {
@@ -30,17 +31,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1300px;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 250px; */
+  max-width: 60vw;
 }
 
 .logo-profile img {
   width: auto;
-  height: 60px;
+  height: 80px;
 }
 
 .nav-links {
@@ -49,10 +45,20 @@ nav {
 }
 
 .nav-links a {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding: 1rem;
   color: var(--ligth);
 }
-
+/* .nav-links a:hover{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 5px;
+   background-color: var(--ligth);
+} */
 /* ----------------------------------------------- */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -69,43 +75,71 @@ nav {
 }
 
 .hero-container {
-  max-width: 400px;
-  padding: 0 30px;
+  max-width: 1200px;
+  padding: 0 0px;
 }
 
 .hero h1 {
-  font-size: 2rem;
-  padding-bottom: 1em;
+  font-size: 5rem;
+  padding-bottom: 4rem;
   color: #f5f5f5;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 2rem;
   color: #f5f5f5;
+  padding-bottom: 2rem;
 }
-
+.menu{
+  display: inline-block;
+  background-color: var(--primart);
+  padding: 1.5rem 3rem;
+  margin-top: 2rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  color: var(--ligth);
+}
+.menu:hover{
+  cursor: pointer;
+  background-color: var(--secondary);
+}
+/* ------------------------------------- */
 .features {
   background-color: var(--gray);
-  padding: 5rem 1rem;
-  display: flex;
-  justify-content: center;
+  padding: 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
 .featur-container {
-  display: flex;
-  justify-content: space-between;
   max-width: 1200px;
+  transition: .4s;
 }
-
+.featur-container:hover ,.dishes-card:hover{
+  transform: translateY(-10px);
+  transition: .4s;
+}
 .card {
   background-color: #ffffff;
   padding: 2rem;
   text-align: center;
+  border-radius: 15px;
+  box-sizing: var(--shadow);
+}
+.card h3{
+  font-size: 2rem;
+
+}
+.card p{
+  font-size: 1.5rem;
+  margin: 50px 0px;
+
 }
 
 .logo {
-  margin-bottom: 40px
+  margin-top: 3rem;
+  margin-bottom: 60px;
 }
 
 .card h3 {
@@ -137,8 +171,9 @@ nav {
 }
 
 .dishes-card-main {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 0rem 10rem;
   gap: 2rem;
 }
 
@@ -146,11 +181,11 @@ nav {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: var(--shadow);
+  transition: 0.4s;
 }
 
 .dishes-main-div {
   position: relative;
-  /* width: 25rem; */
   height: 250px;
   width: auto;
 }
@@ -169,7 +204,6 @@ nav {
   color: var(--ligth);
   top: 1rem;
   right: 1.5rem;
-
 }
 
 .dishes-text {
@@ -184,6 +218,12 @@ nav {
   margin: 1rem;
   padding-bottom: 1rem;
 }
+.dishes-text h3{
+  font-size: 2.5rem;
+}
+.dishes-text p{
+  font-size: 1.5rem;
+}
 
 .dishes-order-main {
   display: flex;
@@ -191,17 +231,73 @@ nav {
   align-items: center;
   margin: 1rem;
 }
-
+.dishes-order-main p ,.order-btn ,.dishes-type{
+  font-size: 1.5rem;
+}
 .order-btn {
   background-color: var(--primart);
-  border-radius: 5px;
+  border-radius: 10px;
   color: var(--ligth);
   padding: 0.5rem 1rem;
   border: none;
 }
+/* ------------------------------------- */
+.about{
+  background-color: var(--gray);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  padding: 5rem;
+}
+.about-main-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1500px;
+}
+.about-para h2{
+  font-size: 2.5rem;
+  padding: 1rem 0rem;
+}
+.about-para p{
+  font-size: 1.5rem;
+}
+.about-img{
+  width: 1000px;
+  height: auto;
+}
+.about-img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover
+}
+
+/* ------------------------------------- */
+
+@media (Max-width:427px){
+/* ------------------------------------- */
+header {
+  padding: 1rem;
+}
+.logo-profile img {
+  width: auto;
+  height: 40px;
+}
+.nav-links {
+  display: none;
+}
+/* ------------------------------------- */
+
+}
+
 
 
 /* ------------------------------------- */
+
+
 @media (min-width: 768px) {
   .logo img {
     height: 50px;
